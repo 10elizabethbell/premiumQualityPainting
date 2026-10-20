@@ -89,7 +89,7 @@ section{padding:64px 0}
 /* ---------- Header ---------- */
 .top{background:var(--paper);color:var(--ink);position:relative;z-index:2}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:76px;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:8px}
-.brand{display:block;text-decoration:none}
+.brand{display:flex;align-items:center;min-height:48px;text-decoration:none}
 .brand img{width:148px;height:auto}
 .tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
 .tel svg{width:18px;height:18px;flex:none;color:var(--gold-ink)}
@@ -132,7 +132,7 @@ section{padding:64px 0}
 .shot.flip .b{opacity:1}
 .shot.flip .a{opacity:0}
 .tag{position:absolute;top:12px;left:12px;font:600 13px/1 var(--text);letter-spacing:.03em;color:#fff;background:rgba(15,29,56,.74);padding:7px 10px;border-radius:6px;pointer-events:none}
-.swap{position:absolute;right:12px;bottom:12px;width:38%;padding:0;border:3px solid #fff;border-radius:16px;overflow:hidden;background:var(--field);cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,.3);aspect-ratio:576/480;transition:transform .15s}
+.swap{position:absolute;left:12px;bottom:12px;width:38%;padding:0;border:3px solid #fff;border-radius:16px;overflow:hidden;background:var(--field);cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,.3);aspect-ratio:576/480;transition:transform .15s}
 .swap img{width:100%;height:100%;object-fit:cover}
 .swap span{position:absolute;left:0;right:0;bottom:0;padding:7px 6px;font:400 14px/1 var(--display);color:var(--ink);background:var(--gold);text-align:center}
 .swap:active{transform:scale(.97)}
@@ -526,9 +526,9 @@ document.documentElement.classList.add('js');
   function sync(){var on=pastHero&&!formIn&&!hits.size;fl.classList.toggle('on',on);fl.tabIndex=on?0:-1;fl.setAttribute('aria-hidden',on?'false':'true')}
   new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
   new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
-  // step aside while a row arrow, the Facebook arrow or a before/after button is in the bottom strip where the circle sits
+  // step aside while a row arrow or the Facebook arrow is in the bottom strip where the circle sits
   var strip=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)hits.add(e.target);else hits.delete(e.target)});sync()},{rootMargin:'-'+Math.max(0,innerHeight-110)+'px 0px 0px 0px'});
-  [].forEach.call(document.querySelectorAll('.row .arrow,.fb .arrow,.swap'),function(a){strip.observe(a)});
+  [].forEach.call(document.querySelectorAll(".row .arrow,.fb .arrow"),function(a){strip.observe(a)});
   sync();
 })();
 
