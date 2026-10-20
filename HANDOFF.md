@@ -5,17 +5,17 @@
 ## What's built
 - One page, calm band style: paper header (their gold serif lettering re-coloured navy, stacked on two lines; `(848) 667-3925` top right) → photo hero → "The finish is only as good as the prep." + their three ✅ lines → "What we paint" rows (navy) → before/after (light) → How it works (deep navy, texture) → "What color would you choose?" form (paper) → close (navy, gold lettering, big number) → footer (Facebook only; no email exists).
 - Palette: deep navy `#0f1d38` (ink, deep bands), mid navy `#1c3157`, paper `#f4f6fb`, one gold `#e4b95c` sampled from their flyer (fills only; `#7a5812` when it must be text on light).
-- Hero: their finished green room (the desk shot), upscaled and blurred under a navy overlay. White text ≥7.8:1, gold ≥4.2:1 (large text) against the brightest pixel at 390 and 1440.
+- Hero: their finished green room (the desk shot), upscaled and blurred under navy. On phones the overlay is even; from 1024px it fades left to right so the green cabinets show beside the copy. Sampled behind the actual text: white ≥6.9:1, gold ≥3.8:1 (large text) at 390, 760, 1024, 1440, 1920.
 - H1 "Monmouth County cabinets, beautifully repainted." bounces in letter by letter; `.rise` fade-up below the first screen; both off under reduced motion and without JS (checked in Chromium and WebKit).
-- Proof: two before/after cards. The big picture is the "after"; the "before" sits in a gold-labelled corner thumbnail that swaps the two on tap. Then "Click to see more of our work." → Facebook.
-- Form: job chips, their own hook as the heading with colour chips (Timeless white / Elegant green / Bold navy / Not sure yet, from their caption), name, town, notes → pre-written text to (848) 667-3925, with Open in Messages / Copy / call fallback. Tapping a service row ticks its chip.
+- Proof: two before/after cards. The big picture is the "after"; the "before" sits in a corner thumbnail (bottom left, gold "⇄ Before" label). Tapping the thumbnail or the big picture swaps them. Then "Click to see more of our work." → Facebook.
+- Form: their own hook "What color would you choose?" as the heading; job chips, colour chips (Timeless white / Elegant green / Bold navy / Not sure yet, from their caption; picking green adds "That's the green in our photos above."), name, town, notes → pre-written text to (848) 667-3925, with Open in Messages / Copy ("Press and hold to copy" if the in-app browser blocks the clipboard) / call fallback. Tapping a service row ticks its chip.
 - Floating text circle: hidden on the hero, shows below it, steps aside for row arrows and the Facebook arrow, hidden while the form is on screen.
 - Favicon / home-screen icon: the gold "P" from their lettering on navy. `og.jpg` 1200×630 with the desk before/after.
 
 ## Assumptions I made
 - **Navy ground** instead of the flyer's black (house rule: never black). Navy is the wall colour in their own job photos and "bold navy" is in their caption.
 - **"Built-ins and shelving" and "Islands and desks"** as services come from the photos, not their words. Their words only say kitchen cabinet painting.
-- **The care paragraph** ("Doors come off, your floors and counters stay covered…") is written from the before photo (doors off and stacked, desk top covered and taped). Owner should approve.
+- **The care paragraph** ("The doors come off, the tops get wrapped and taped…") is written from the before photo (doors off and stacked on the desk, top wrapped in plastic and blue tape). Owner should approve.
 - **"We go over the job with you and give you a price"** (step 2) is generic; I don't know whether they quote from photos or visit.
 - **We/us voice:** the ad says "Send us a message".
 - **Photos are a study/library, not a kitchen.** The page never calls them a kitchen; the heading is "Same room, new color."
@@ -42,7 +42,8 @@
 - Worlds from the trade, for an opt-in signature motion: (1) **a colour-swatch fan** — drag across the hero cabinets and the doors re-colour white → green → navy (best: it's their own "what color would you choose?" hook); (2) a brush stroke that paints wood to green across the hero as you drag; (3) painter's tape peeling off the headline; (4) cabinet doors that swing open on the services rows; (5) a fan deck of paint chips as the form's colour picker.
 - A drag slider once there's an aligned before/after pair.
 - Name the owner in the hero promise once confirmed.
-- Impeccable findings kept by choice: the detector flags the band texture ("repeating-gradient stripes") and a "flat type hierarchy" (it only counts small UI sizes). Both are suppressed for `index.html` in `.impeccable/config.json` with reasons.
+- Review suggestions not taken: the finish reviewer proposed "Pick a color, get a quote" for the hero button; I used "Get a quote" (shorter, still honest that it goes to the form). It also noted the calm kit's header shadow on scroll; not built because the header isn't sticky.
+- Impeccable findings kept by choice: the craft floor bans eyebrow pills (kept, your call). The finish reviewer flagged the missing concept-roll seed (the calm style is the house default). the detector flags the band texture ("repeating-gradient stripes") and a "flat type hierarchy" (it only counts small UI sizes). Both are suppressed for `index.html` in `.impeccable/config.json` with reasons.
 
 ## Not verified
 - Real-device touch (tested with Playwright Chromium and WebKit, touch contexts).

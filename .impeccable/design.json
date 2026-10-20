@@ -1,0 +1,518 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T15:49:15+00:00",
+  "title": "Design System: Premium Quality Painting",
+  "extensions": {
+    "colorMeta": {
+      "gold": {
+        "role": "primary",
+        "displayName": "Flyer Gold",
+        "tonalRamp": [
+          "#200000",
+          "#3e1900",
+          "#5d3700",
+          "#7d5600",
+          "#9f7600",
+          "#c19838",
+          "#e9be61",
+          "#ffe88b"
+        ],
+        "canonical": "oklch(80.6% 0.122 85)"
+      },
+      "gold-2": {
+        "role": "primary",
+        "displayName": "Pale Gold",
+        "tonalRamp": [
+          "#1e0200",
+          "#3b1c00",
+          "#593900",
+          "#795800",
+          "#9a7823",
+          "#bd9949",
+          "#e4bf6f",
+          "#ffea99"
+        ],
+        "canonical": "oklch(85.4% 0.107 85)"
+      },
+      "gold-ink": {
+        "role": "primary",
+        "displayName": "Gold Ink",
+        "tonalRamp": [
+          "#1e0200",
+          "#3a1c00",
+          "#593800",
+          "#795710",
+          "#9a7737",
+          "#bd9859",
+          "#e4be7e",
+          "#ffe8a7"
+        ],
+        "canonical": "oklch(48.4% 0.093 80)"
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink Navy",
+        "tonalRamp": [
+          "#010922",
+          "#15233f",
+          "#30405d",
+          "#4d5e7e",
+          "#6b7e9f",
+          "#8c9fc2",
+          "#b1c5e9",
+          "#dbefff"
+        ],
+        "canonical": "oklch(23.5% 0.056 262)"
+      },
+      "deep": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "tonalRamp": [
+          "#010922",
+          "#15233f",
+          "#30405d",
+          "#4d5e7e",
+          "#6b7e9f",
+          "#8c9fc2",
+          "#b1c5e9",
+          "#dbefff"
+        ],
+        "canonical": "oklch(23.5% 0.056 262)"
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Mid Navy",
+        "tonalRamp": [
+          "#000729",
+          "#0e2247",
+          "#293f66",
+          "#465e87",
+          "#657ea9",
+          "#859fcd",
+          "#aac5f4",
+          "#d3f0ff"
+        ],
+        "canonical": "oklch(31.7% 0.073 261)"
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "tonalRamp": [
+          "#0a0b0e",
+          "#232428",
+          "#3e4044",
+          "#5c5d62",
+          "#7b7d82",
+          "#9c9ea3",
+          "#c2c4c9",
+          "#eceef3"
+        ],
+        "canonical": "oklch(97.3% 0.007 269)"
+      },
+      "light": {
+        "role": "neutral",
+        "displayName": "Light Band",
+        "tonalRamp": [
+          "#080b10",
+          "#21242a",
+          "#3c4046",
+          "#5a5e65",
+          "#797e85",
+          "#9a9fa6",
+          "#c0c4cc",
+          "#eaeff7"
+        ],
+        "canonical": "oklch(94.8% 0.012 260)"
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "White Card",
+        "tonalRamp": [
+          "#0b0b0b",
+          "#242424",
+          "#404040",
+          "#5d5d5d",
+          "#7d7d7d",
+          "#9e9e9e",
+          "#c4c4c4",
+          "#eeeeee"
+        ],
+        "canonical": "oklch(100.0% 0.000 90)"
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Field Blue",
+        "tonalRamp": [
+          "#080b11",
+          "#20242b",
+          "#3b4047",
+          "#595e66",
+          "#787e86",
+          "#999fa7",
+          "#bfc5cd",
+          "#e9eff8"
+        ],
+        "canonical": "oklch(94.1% 0.014 258)"
+      },
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Slate",
+        "tonalRamp": [
+          "#030a1e",
+          "#18233a",
+          "#334058",
+          "#505e78",
+          "#6f7e99",
+          "#909fbc",
+          "#b5c5e3",
+          "#dfefff"
+        ],
+        "canonical": "oklch(31.8% 0.046 264)"
+      },
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "tonalRamp": [
+          "#030a1e",
+          "#19233a",
+          "#334058",
+          "#505e78",
+          "#6f7d99",
+          "#909fbc",
+          "#b5c5e3",
+          "#dfefff"
+        ],
+        "canonical": "oklch(46.0% 0.046 264)"
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "tonalRamp": [
+          "#090b0e",
+          "#222427",
+          "#3e4043",
+          "#5b5e61",
+          "#7b7d81",
+          "#9c9fa2",
+          "#c1c4c8",
+          "#eceff3"
+        ],
+        "canonical": "oklch(97.5% 0.006 255)"
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "Soft Mist",
+        "tonalRamp": [
+          "#060b17",
+          "#1d2432",
+          "#38404f",
+          "#555e6e",
+          "#747e8f",
+          "#959fb1",
+          "#bbc4d7",
+          "#e5efff"
+        ],
+        "canonical": "oklch(86.5% 0.028 263)"
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "tonalRamp": [
+          "#010922",
+          "#15233f",
+          "#30405d",
+          "#4d5e7e",
+          "#6b7e9f",
+          "#8c9fc2",
+          "#b1c5e9",
+          "#dbefff"
+        ]
+      },
+      "focus": {
+        "role": "tertiary",
+        "displayName": "Focus Blue",
+        "tonalRamp": [
+          "#02004d",
+          "#00136f",
+          "#003792",
+          "#1b59b6",
+          "#3d7bdb",
+          "#5e9dff",
+          "#83c4ff",
+          "#acf0ff"
+        ],
+        "canonical": "oklch(50.2% 0.164 259)"
+      },
+      "error": {
+        "role": "tertiary",
+        "displayName": "Error Red",
+        "tonalRamp": [
+          "#360000",
+          "#5b0000",
+          "#800000",
+          "#a52b22",
+          "#cb4f42",
+          "#f17263",
+          "#ff9887",
+          "#ffc3b0"
+        ],
+        "canonical": "oklch(50.1% 0.178 29)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero H1 only, white with a gold last phrase, with the letter bounce-in."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section H2s."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows, care claims, link banner, step titles."
+      },
+      "title-sm": {
+        "displayName": "Title small",
+        "purpose": "Buttons, field labels and legends, header phone."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Section introductions, max 40ch; the hero promise at 17-20px."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text and input text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Before / After photo tag."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Optional notes, helper and error text."
+      }
+    },
+    "shadows": [
+      {
+        "name": "thumb-lift",
+        "value": "0 4px 12px rgba(0,0,0,.22)",
+        "purpose": "Before/after corner thumbnail over the photo."
+      },
+      {
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(0,0,0,.28)",
+        "purpose": "Fixed floating text circle."
+      }
+    ],
+    "surfaces": [
+      {
+        "name": "deep-texture",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Line texture on deep navy bands (how it works, footer)."
+      },
+      {
+        "name": "hero-wash",
+        "value": "linear-gradient(180deg,rgba(15,29,56,.84) 0%,rgba(15,29,56,.72) 55%,rgba(15,29,56,.9) 100%)",
+        "purpose": "Even navy wash over the hero photo on phones and tablets."
+      },
+      {
+        "name": "hero-wash-wide",
+        "value": "linear-gradient(90deg,rgba(15,29,56,.9) 0%,rgba(15,29,56,.84) 45%,rgba(15,29,56,.5) 75%,rgba(15,29,56,.3) 100%)",
+        "purpose": "From 1024px: dense behind the copy, letting the green room show on the right."
+      }
+    ],
+    "motion": [
+      {
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), 20ms stagger, from translateX(50px) opacity 0",
+        "purpose": "Hero H1 letter bounce-in, once, JS and motion-allowed only."
+      },
+      {
+        "name": "rise",
+        "value": "opacity and transform .4s ease-out, from translateY(12px)",
+        "purpose": "Fade-up for blocks that start below the first screen."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle entrance and exit."
+      },
+      {
+        "name": "swap-fade",
+        "value": "opacity .35s ease-out",
+        "purpose": "Before/after photo cross-fade."
+      },
+      {
+        "name": "state",
+        "value": ".15s to .2s",
+        "purpose": "Colour and border transitions on buttons, fields, chips, arrow discs."
+      },
+      {
+        "name": "press",
+        "value": "transform .12s, scale(.98)",
+        "purpose": "Button press (thumbnail .15s, scale(.97))."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow",
+        "value": "max-width: 380px"
+      },
+      {
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The one action: flyer-gold pill with ink navy Cal Sans text.",
+      "html": "<a class=\"ds-btn ds-btn-primary\" href=\"#\">Get a quote</a>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-primary{background:#e4b95c;color:#0f1d38;border-color:#e4b95c}.ds-btn-primary:hover{background:#efca7a;border-color:#efca7a}.ds-btn-primary:focus-visible{outline:3px solid #1f5fbf;outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary action on the hero: outlined pill on navy.",
+      "html": "<div class=\"ds-dark\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">See our work</a></div>",
+      "css": ".ds-dark{background:#0f1d38;padding:24px}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-ghost{background:transparent;color:#f4f7fb;border-color:rgba(244,247,251,.7)}.ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}.ds-btn-ghost:focus-visible{outline:3px solid #e4b95c;outline-offset:3px}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input-text",
+      "description": "Filled field with a Cal Sans label; Focus Blue border on hover and focus.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Your name</label><input id=\"ds-n\" class=\"ds-input\" type=\"text\" placeholder=\"First name is fine\"></div>",
+      "css": ".ds-field{display:grid;gap:8px;max-width:360px}.ds-field label{font:400 18px/1.2 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;color:#0f1d38}.ds-input{width:100%;font:16px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;color:#0f1d38;background:#e6ecf5;border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;transition:border-color .15s;box-sizing:border-box}.ds-input::placeholder{color:#4b5872}.ds-input:hover,.ds-input:focus{outline:none;border-color:#1f5fbf}"
+    },
+    {
+      "name": "Choice Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Pill checkbox or radio; colour chips carry a paint swatch. Selected turns ink navy.",
+      "html": "<div class=\"ds-chips\"><input type=\"radio\" name=\"ds-c\" id=\"ds-c1\" checked><label for=\"ds-c1\"><span class=\"ds-sw\" style=\"background:#26413a\"></span>Elegant green</label><input type=\"radio\" name=\"ds-c\" id=\"ds-c2\"><label for=\"ds-c2\"><span class=\"ds-sw\" style=\"background:#f6f3ea\"></span>Timeless white</label><input type=\"radio\" name=\"ds-c\" id=\"ds-c3\"><label for=\"ds-c3\">Not sure yet</label></div>",
+      "css": ".ds-chips{display:flex;flex-wrap:wrap;gap:10px}.ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0}.ds-chips label{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 18px;border-radius:999px;background:#e6ecf5;border:2px solid transparent;font:16px/1 -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;color:#0f1d38;cursor:pointer;transition:border-color .15s,background-color .15s,color .15s}.ds-chips label:hover{border-color:#1f5fbf}.ds-chips input:focus-visible+label{outline:3px solid #1f5fbf;outline-offset:2px}.ds-chips input:checked+label{background:#0f1d38;color:#fff}.ds-sw{width:20px;height:20px;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1.5px rgba(15,29,56,.25)}.ds-chips input:checked+label .ds-sw{box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.6)}"
+    },
+    {
+      "name": "Form Card",
+      "kind": "card",
+      "refersTo": "form-card",
+      "description": "White 24px card on paper holding the quote form.",
+      "html": "<div class=\"ds-paper\"><div class=\"ds-card\"><b>What needs painting?</b><a class=\"ds-btn ds-btn-primary\" href=\"#\">Send as a text</a></div></div>",
+      "css": ".ds-paper{background:#f4f6fb;padding:24px}.ds-card{background:#fff;border-radius:24px;padding:clamp(20px,5vw,32px);display:grid;gap:22px;max-width:600px}.ds-card b{font:400 18px/1.2 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;color:#0f1d38}.ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;text-decoration:none;cursor:pointer;border:2px solid transparent;transition:background-color .2s,color .2s,border-color .2s,transform .12s}.ds-btn:active{transform:scale(.98)}.ds-btn-primary{background:#e4b95c;color:#0f1d38;border-color:#e4b95c}.ds-btn-primary:hover{background:#efca7a}"
+    },
+    {
+      "name": "Service Link Row",
+      "kind": "nav",
+      "refersTo": "arrow-disc",
+      "description": "Full-width Cal Sans link rows on navy; only the arrow disc turns gold on hover or focus.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-row\" href=\"#\">Kitchen cabinets<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a><a class=\"ds-row\" href=\"#\">Built-ins and shelving<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ".ds-navy{background:#1c3157;padding:8px 24px}.ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;text-decoration:none;color:#f4f7fb;font:400 clamp(20px,5.4vw,26px)/1.15 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;border-top:1px solid rgba(255,255,255,.14)}.ds-row:last-child{border-bottom:1px solid rgba(255,255,255,.14)}.ds-row:focus-visible{outline:none}.ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:#f4f7fb;transition:background-color .2s,color .2s}.ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#e4b95c;color:#0f1d38}.ds-row:focus-visible .ds-arrow{outline:3px solid #e4b95c;outline-offset:3px}"
+    },
+    {
+      "name": "Before/After Swap",
+      "kind": "custom",
+      "refersTo": "swap-thumb",
+      "description": "After photo with the before tucked in a framed corner thumbnail; tap to swap.",
+      "html": "<figure class=\"ds-shot\"><div class=\"ds-ph ds-after\"></div><span class=\"ds-tag\">After</span><button class=\"ds-swap\" type=\"button\"><div class=\"ds-ph ds-before\"></div><span><svg viewBox=\"0 0 24 24\" width=\"14\" height=\"14\"><path d=\"M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>Before</span></button></figure>",
+      "css": ".ds-shot{position:relative;margin:0;aspect-ratio:576/480;max-width:420px;border-radius:24px;overflow:hidden;background:#e6ecf5}.ds-ph{position:absolute;inset:0}.ds-after{background:linear-gradient(160deg,#2f4d45,#1f3530)}.ds-before{background:linear-gradient(160deg,#c89a5e,#9a6c38)}.ds-tag{position:absolute;top:12px;left:12px;font:600 13px/1 -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif;letter-spacing:.03em;color:#fff;background:rgba(15,29,56,.74);padding:7px 10px;border-radius:6px}.ds-swap{position:absolute;left:12px;bottom:12px;width:32%;aspect-ratio:576/480;padding:0;border:3px solid #fff;border-radius:16px;overflow:hidden;background:#e6ecf5;cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.22);transition:transform .15s}.ds-swap:hover{transform:translateY(-2px)}.ds-swap:active{transform:scale(.97)}.ds-swap:focus-visible{outline:3px solid #1f5fbf;outline-offset:3px}.ds-swap span{position:absolute;left:0;right:0;bottom:0;padding:7px 6px;font:400 14px/1 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;color:#0f1d38;background:#e4b95c;display:flex;justify-content:center;align-items:center;gap:6px}"
+    },
+    {
+      "name": "Numbered Steps",
+      "kind": "custom",
+      "refersTo": "step-disc",
+      "description": "Gold number discs with Cal Sans titles on the textured deep band.",
+      "html": "<div class=\"ds-deep\"><ol class=\"ds-steps\"><li><div><b>Send us a text.</b><span>Tell us what you'd like painted.</span></div></li><li><div><b>Get your quote.</b><span>We go over the job with you.</span></div></li></ol></div>",
+      "css": ".ds-deep{background-color:#0f1d38;background-image:repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px);color:#c9d3e6;padding:24px;font:16px/1.7 -apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif}.ds-steps{list-style:none;margin:0;padding:0;display:grid;gap:24px;counter-reset:s}.ds-steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;counter-increment:s}.ds-steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:#e4b95c;color:#0f1d38;font:400 20px/1 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif}.ds-steps b{display:block;font:400 21px/1.2 'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;color:#f4f7fb;margin-top:4px}.ds-steps span{display:block;margin-top:4px}"
+    },
+    {
+      "name": "Floating Text Circle",
+      "kind": "custom",
+      "refersTo": "float-circle",
+      "description": "The one persistent action: a 60px gold circle that opens a pre-written text.",
+      "html": "<a class=\"ds-float\" href=\"#\" aria-label=\"Text us\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a>",
+      "css": ".ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:#e4b95c;color:#0f1d38;box-shadow:0 10px 28px rgba(0,0,0,.28);transition:transform .35s cubic-bezier(.2,.8,.2,1)}.ds-float:focus-visible{outline:3px solid #1f5fbf;outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Gold Lettering on a Navy Door",
+    "overview": "The system is the client's flyer translated into Ellie's calm band style: their gold lettering colour set against navy rather than the flyer's black (navy is the wall colour in their own job photos), laid out as full-bleed horizontal bands of off-white paper, a pale blue-grey band, a mid navy band and a deep navy band with a faint diagonal line texture. Each band holds one idea, set in Cal Sans headings over a plain system body. One warm flyer gold does all the pointing: it fills the primary button, the arrow discs on hover, the step numbers, the before/after thumbnail label and the floating text circle, and it never covers a large surface. The craft is carried by the client's own photographs: the hero is their finished deep-green room under a navy wash, and the work band shows wood-to-green transformations you flip with a tap.\n\nDensity is low and phone-first. Content stacks in a single 20px-gutter column with 64px band padding and splits into two columns at 760px and two or three at 1024px. Forms are soft: a white 24px card, pill buttons, pill chips, 10px fields filled rather than outlined. Motion is short: the hero headline's letters bounce in once, blocks below the first screen rise 12px as they arrive, the floating circle slides up after the hero, and before/after photos cross-fade on swap. All of it switches off under reduced motion.",
+    "keyCharacteristics": [
+      "Full-bleed colour bands alternating light (paper, light band) and dark (navy, deep navy); no borders between them.",
+      "One gold accent, used as a fill; gold as text only on dark grounds, and in its darkened ink form on light ground.",
+      "Cal Sans at weight 400 for every heading, label, button, row and phone number; system sans for running text.",
+      "Pills, circles and 24px cards; no sharp corners on interactive elements.",
+      "Flat surfaces; the only shadows sit under elements that float over content (the floating circle and the before/after thumbnail).",
+      "A distinct focus blue for keyboard and form-hover states, kept apart from the gold fill."
+    ],
+    "rules": [
+      {
+        "name": "The Gold Is a Fill Rule",
+        "body": "Gold appears as a fill on small elements (buttons, discs, the thumbnail label, the floating circle), never as a band, card or large background, and never as text on light ground; for that use Gold Ink.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two Signals Rule",
+        "body": "Gold means \"act here\"; Focus Blue means \"you are here\". Keyboard focus and form hover use Focus Blue on light ground so a focused gold button stays readable.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dark-Band Accent Rule",
+        "body": "A heading's last phrase may take the gold accent (\"beautifully repainted.\", \"What we *paint.*\", \"How it *works.*\") only on dark grounds: the hero, navy and deep navy bands. Headings on light bands stay all Ink Navy.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Weight Rule",
+        "body": "Cal Sans is set at 400 everywhere; emphasis comes from size and colour, not boldness.",
+        "section": "typography"
+      },
+      {
+        "name": "The Phone-First Rule",
+        "body": "Design every band as a single column first; add columns only at 760px and 1024px.",
+        "section": "layout"
+      },
+      {
+        "name": "The Photo Shows Through Rule",
+        "body": "On wide screens the hero wash fades from 90% navy behind the copy to 30% at the far edge; on phones it stays even (72 to 90%) because the copy covers the whole photo.",
+        "section": "layout"
+      },
+      {
+        "name": "The Only Floaters Cast Shadows Rule",
+        "body": "A shadow means the element floats over other content. Cards, buttons, chips, banners and bands stay flat.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Visible At Rest Rule",
+        "body": "Content is visible without JavaScript and under reduced motion; motion only ever adds an entrance, never gates content.",
+        "section": "motion"
+      }
+    ],
+    "dos": [
+      "**Do** fill actions with Flyer Gold and set Ink Navy text on it.",
+      "**Do** use Gold Ink, not gold, whenever the accent is text or a line icon on paper or the light band.",
+      "**Do** alternate light and dark bands, and keep the diagonal line texture to deep navy bands.",
+      "**Do** keep tap targets at least 44px (buttons 56px, chips 48px, rows 76px, banner 80px).",
+      "**Do** gate hover styles behind a real pointer (`hover: hover`) so taps don't leave them stuck.",
+      "**Do** switch focus outlines to gold on navy, hero and footer grounds.",
+      "**Do** let the client's own photos carry the proof, under a navy wash when text sits on them."
+    ],
+    "donts": [
+      "**Don't** use gold as a band, card or large background.",
+      "**Don't** use black as a ground; dark grounds are navy.",
+      "**Don't** use Focus Blue as a decorative colour; it is reserved for focus and form hover.",
+      "**Don't** add shadows to cards, buttons, banners or bands; only floating elements cast them.",
+      "**Don't** set Cal Sans bold or add a second display face.",
+      "**Don't** add a sticky bottom bar; the floating circle is the one persistent action.",
+      "**Don't** animate content that is visible on first load, beyond the hero letter bounce-in."
+    ]
+  }
+}
