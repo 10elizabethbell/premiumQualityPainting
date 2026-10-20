@@ -96,7 +96,7 @@ section{padding:64px 0}
 
 /* ---------- Hero: their own finished room, softened under navy ---------- */
 .hero{padding:0;position:relative;background:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
-.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%;z-index:-2;transform:scale(1.04)}
+.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%;z-index:-2}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,29,56,.84) 0%,rgba(15,29,56,.72) 55%,rgba(15,29,56,.9) 100%)}
 .hero-copy{display:grid;gap:20px;justify-items:start;padding-top:52px;padding-bottom:64px}
 .hero h1{color:#fff;font-size:clamp(40px,11.4vw,80px);line-height:1.02;max-width:11ch}
@@ -109,7 +109,7 @@ section{padding:64px 0}
 
 /* ---------- Care ---------- */
 .claims{list-style:none;margin:28px 0 0;padding:0;display:grid}
-.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
+.claims li{display:flex;align-items:center;gap:16px;padding:16px 0;text-wrap:balance;font:400 clamp(20px,5.4vw,24px)/1.15 var(--display);color:var(--ink)}
 .claims li+li{border-top:1px solid var(--line)}
 .claims svg{width:40px;height:40px;flex:none;color:var(--gold-ink)}
 
@@ -117,7 +117,7 @@ section{padding:64px 0}
 .rows{list-style:none;margin:32px 0 0;padding:0;display:grid}
 .rows li{border-top:1px solid rgba(255,255,255,.14)}
 .rows li:last-child{border-bottom:1px solid rgba(255,255,255,.14)}
-.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(22px,6vw,28px)/1.15 var(--display)}
+.row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:76px;padding:12px 0;text-decoration:none;color:var(--on-dark);font:400 clamp(20px,5.4vw,26px)/1.15 var(--display)}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
 .arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;transition:background-color .2s,color .2s}
 .arrow svg{width:18px;height:18px}
@@ -132,9 +132,11 @@ section{padding:64px 0}
 .shot.flip .b{opacity:1}
 .shot.flip .a{opacity:0}
 .tag{position:absolute;top:12px;left:12px;font:600 13px/1 var(--text);letter-spacing:.03em;color:#fff;background:rgba(15,29,56,.74);padding:7px 10px;border-radius:6px;pointer-events:none}
-.swap{position:absolute;left:12px;bottom:12px;width:38%;padding:0;border:3px solid #fff;border-radius:16px;overflow:hidden;background:var(--field);cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,.3);aspect-ratio:576/480;transition:transform .15s}
+.swap{position:absolute;left:12px;bottom:12px;width:32%;padding:0;border:3px solid #fff;border-radius:16px;overflow:hidden;background:var(--field);cursor:pointer;box-shadow:0 4px 12px rgba(0,0,0,.22);aspect-ratio:576/480;transition:transform .15s}
 .swap img{width:100%;height:100%;object-fit:cover}
-.swap span{position:absolute;left:0;right:0;bottom:0;padding:7px 6px;font:400 14px/1 var(--display);color:var(--ink);background:var(--gold);text-align:center}
+.swap span{position:absolute;left:0;right:0;bottom:0;padding:7px 6px;font:400 14px/1 var(--display);color:var(--ink);background:var(--gold);display:flex;justify-content:center;align-items:center;gap:6px}
+.swap span svg{width:14px;height:14px;flex:none}
+.shot>img{cursor:pointer}
 .swap:active{transform:scale(.97)}
 .swap:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:16px}
 .fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:80px;padding:16px 16px 16px 22px;border-radius:var(--r-card);background:var(--ink);color:var(--on-dark);text-decoration:none;font:400 clamp(19px,5.2vw,22px)/1.2 var(--display)}
@@ -177,6 +179,7 @@ input[type=text]:focus,textarea:focus{outline:none;border-color:var(--focus)}
 form .btn-primary{width:100%}
 form .btn-primary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
 .after{font-size:14px;color:var(--soft)}
+.hint{font-size:15px;color:var(--soft);margin-top:4px}
 .sent{color:var(--ink);font-weight:600;display:grid;gap:12px}
 .sent-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
 .btn-soft{background:var(--field);color:var(--ink);border-color:transparent;padding:0 14px;font-size:17px}
@@ -222,8 +225,8 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .actions .btn{min-width:240px}
   .rows{grid-template-columns:1fr 1fr;column-gap:48px}
   .rows li:nth-last-child(2){border-bottom:1px solid rgba(255,255,255,.14)}
-  .work-grid{grid-template-columns:1fr 1fr;gap:24px}
-  .fb{grid-column:1/-1;max-width:520px}
+  .work-grid{grid-template-columns:1fr 1fr;gap:24px;max-width:880px}
+  .fb{grid-column:1/-1;max-width:calc(50% - 12px)}
 }
 @media (min-width:1024px){
   .split{display:grid;grid-template-columns:1fr 1fr;column-gap:64px;align-items:start}
@@ -233,6 +236,10 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
   .bigtel{margin-top:0}
   .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
+  /* wide screens: the copy sits left, so let the green room show through on the right */
+  .hero::before{background:linear-gradient(90deg,rgba(15,29,56,.9) 0%,rgba(15,29,56,.84) 45%,rgba(15,29,56,.5) 75%,rgba(15,29,56,.3) 100%)}
+  .rows{grid-template-columns:repeat(3,1fr)}
+  .rows li{border-bottom:1px solid rgba(255,255,255,.14)}
 }
 /* hover styles only where there is a real pointer, so taps don't leave them stuck on */
 @media (hover:hover){
@@ -251,7 +258,7 @@ footer a:hover{color:var(--gold)}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  .js .rise,.float,.btn,.shot>img,.swap{transition:none}
+  .js .rise,.float,.btn,.swap{transition:none}
   .js .rise.below{opacity:1;transform:none}
   .hero h1 .c{animation:none;opacity:1;transform:none}
 }
@@ -268,6 +275,7 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-swap" viewBox="0 0 24 24"><path d="M4 8h15M15 4l4 4-4 4M20 16H5M9 12l-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
   <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 </svg>
 <header class="top">
@@ -285,7 +293,7 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
     <h1 id="h1">Monmouth County cabinets, <span class="accent">beautifully repainted.</span></h1>
     <p class="promise">Your dream kitchen starts with your favorite color. We do the careful prep, so it ends with a smooth, beautiful finish.</p>
     <div class="actions">
-      <a class="btn btn-primary" href="#ask">Text us for a quote</a>
+      <a class="btn btn-primary" href="#ask">Get a quote</a>
       <a class="btn btn-ghost" href="#work">See our work</a>
     </div>
   </div>
@@ -295,7 +303,7 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
   <div class="wrap split">
     <div class="rise">
       <h2 id="h-care">The finish is only as good as the prep.</h2>
-      <p class="lede" style="margin-top:16px">Your cabinets get opened and closed every day, so we don't rush the part you'll never see. Doors come off, your floors and counters stay covered, and every surface is ready before the color goes on.</p>
+      <p class="lede" style="margin-top:16px">Your cabinets get opened and closed every day, so we don't rush the part you'll never see. The doors come off, the tops get wrapped and taped, and every surface is ready before the color goes on.</p>
     </div>
     <ul class="claims">
       <li class="rise"><svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="5" width="26" height="30" rx="3"/><path d="M20 5v30"/><path d="M15 19v3M25 19v3"/></svg>Detailed preparation</li>
@@ -323,20 +331,20 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
   <div class="wrap">
     <div class="head rise">
       <p class="eyebrow">Before and after</p>
-      <h2 id="h-work">Same room, <span class="accent">new color.</span></h2>
+      <h2 id="h-work">Same room, new color.</h2>
     </div>
     <div class="work-grid">
       <figure class="shot rise">
         <img class="a" src="img/room-after.webp" width="576" height="480" alt="After: the built-in shelves and cabinets painted deep green, with brass knobs" loading="lazy">
-        <img class="b" src="img/room-before.webp" width="576" height="480" alt="Before: the same built-ins in honey-colored wood, a ladder in the room" loading="lazy">
+        <img class="b" aria-hidden="true" src="img/room-before.webp" width="576" height="480" alt="Before: the same built-ins in honey-colored wood, a ladder in the room" loading="lazy">
         <span class="tag" aria-hidden="true">After</span>
-        <button class="swap" type="button" aria-pressed="false" aria-label="Show before"><img src="img/room-before.webp" width="576" height="480" alt="" loading="lazy"><span>Before</span></button>
+        <button class="swap" type="button" aria-label="Show before"><img src="img/room-before.webp" width="576" height="480" alt="" loading="lazy"><span><svg aria-hidden="true"><use href="#i-swap"/></svg><b class="lbl">Before</b></span></button>
       </figure>
       <figure class="shot rise">
         <img class="a" src="img/desk-after.webp" width="576" height="480" alt="After: the desk and tall cabinets painted deep green, with brass pulls and a dark stone top" loading="lazy">
-        <img class="b" src="img/desk-before.webp" width="576" height="480" alt="Before: the same desk and cabinets in wood, desk top covered and taped, doors off for painting" loading="lazy">
+        <img class="b" aria-hidden="true" src="img/desk-before.webp" width="576" height="480" alt="Before: the same desk and cabinets in wood, desk top covered and taped, doors off for painting" loading="lazy">
         <span class="tag" aria-hidden="true">After</span>
-        <button class="swap" type="button" aria-pressed="false" aria-label="Show before"><img src="img/desk-before.webp" width="576" height="480" alt="" loading="lazy"><span>Before</span></button>
+        <button class="swap" type="button" aria-label="Show before"><img src="img/desk-before.webp" width="576" height="480" alt="" loading="lazy"><span><svg aria-hidden="true"><use href="#i-swap"/></svg><b class="lbl">Before</b></span></button>
       </figure>
       <a class="fb rise" href="https://facebook.com/profile.php?id=61555626455608" rel="noopener">
         <span class="lbl"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4h-3V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v2.9h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>Click to see more of our work.</span>
@@ -352,7 +360,7 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
     <ol class="steps">
       <li class="rise"><div><b>Send us a text.</b><span>Tell us what you'd like painted and the color you have in mind. A photo of your cabinets helps.</span></div></li>
       <li class="rise"><div><b>Get your quote.</b><span>We go over the job with you and give you a price.</span></div></li>
-      <li class="rise"><div><b>We prep, then paint.</b><span>Detailed preparation first, then a smooth, beautiful finish.</span></div></li>
+      <li class="rise"><div><b>We prep, then paint.</b><span>The color you picked, on the cabinets you already have.</span></div></li>
     </ol>
   </div>
 </section>
@@ -360,9 +368,9 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
 <section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
     <div class="head rise">
-      <p class="eyebrow">Call or text</p>
+      <p class="eyebrow">Your quote</p>
       <h2 id="h-ask">What color would you choose?</h2>
-      <p class="lede">Pick what you'd like painted and a color, and add your name. It goes out as a text.</p>
+      <p class="lede">Send us a message and let's talk.</p>
     </div>
     <form id="quoteForm" class="rise" novalidate>
       <fieldset class="field">
@@ -382,6 +390,7 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
           <input type="radio" name="color" id="c3" value="navy"><label for="c3"><span class="sw" style="background:#1d2c52" aria-hidden="true"></span>Bold navy</label>
           <input type="radio" name="color" id="c4" value="unsure"><label for="c4">Not sure yet</label>
         </div>
+        <p class="hint" id="greenNote" aria-live="polite" hidden>That's the green in our photos above.</p>
       </fieldset>
       <div class="field" id="f-name">
         <label for="name">Your name</label>
@@ -469,12 +478,16 @@ document.documentElement.classList.add('js');
 /* ===== Before/after: tap the corner picture to swap it with the big one ===== */
 (function(){
   [].forEach.call(document.querySelectorAll('.shot'),function(shot){
-    var btn=shot.querySelector('.swap'),thumb=btn.querySelector('img'),lbl=btn.querySelector('span'),tag=shot.querySelector('.tag');
+    var btn=shot.querySelector('.swap'),thumb=btn.querySelector('img'),lbl=btn.querySelector('.lbl'),tag=shot.querySelector('.tag');
     var a=shot.querySelector('.a').getAttribute('src'),b=shot.querySelector('.b').getAttribute('src');
+    // the big picture swaps too, since that's where a thumb lands
+    shot.querySelector('.a').addEventListener('click',function(){btn.click()});shot.querySelector('.b').addEventListener('click',function(){btn.click()});
     btn.addEventListener('click',function(){
       var flip=shot.classList.toggle('flip');
       thumb.src=flip?a:b;lbl.textContent=flip?'After':'Before';tag.textContent=flip?'Before':'After';
-      btn.setAttribute('aria-pressed',flip?'true':'false');btn.setAttribute('aria-label',flip?'Show after':'Show before');
+      btn.setAttribute('aria-label',flip?'Show after':'Show before');
+      // only the picture on show is read out
+      shot.querySelector('.a').setAttribute('aria-hidden',flip?'true':'false');shot.querySelector('.b').setAttribute('aria-hidden',flip?'false':'true');
     });
   });
 })();
@@ -487,12 +500,16 @@ document.documentElement.classList.add('js');
   [].forEach.call(document.querySelectorAll('[data-pick]'),function(a){
     a.addEventListener('click',function(){var c=form.querySelector('input[name=job][value="'+a.getAttribute('data-pick')+'"]');if(c)c.checked=true});
   });
+  // picking green points back at the photos
+  form.addEventListener('change',function(e){if(e.target.name==='color')document.getElementById('greenNote').hidden=e.target.value!=='green'});
   form.addEventListener('input',function(e){var f=e.target.closest('.field');if(f&&f.classList.contains('bad')&&e.target.value.trim()){f.classList.remove('bad');e.target.setAttribute('aria-invalid','false')}});
   document.getElementById('copyMsg').addEventListener('click',function(){
     var t=document.getElementById('msgOut'),b=this;
-    function done(){b.textContent='Copied'}
-    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t.value).then(done,function(){t.select();try{document.execCommand('copy');done()}catch(_){}});
-    else{t.select();try{document.execCommand('copy');done()}catch(_){}}
+    function say(x){b.textContent=x;clearTimeout(b._t);b._t=setTimeout(function(){b.textContent='Copy message'},2500)}
+    // in-app browsers often block the clipboard: fall back to selecting the text so it can be copied by hand
+    function manual(){t.focus();t.select();var ok=false;try{ok=document.execCommand('copy')}catch(_){}say(ok?'Copied':'Press and hold to copy')}
+    if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t.value).then(function(){say('Copied')},manual);
+    else manual();
   });
   form.addEventListener('submit',function(e){
     e.preventDefault();
@@ -513,7 +530,7 @@ document.documentElement.classList.add('js');
     var href='sms:'+CONFIG.PHONE+'?&body='+encodeURIComponent(msg);
     // show the fallback straight away: in-app browsers can block an sms: redirect that isn't a direct tap
     document.getElementById('openSms').href=href;document.getElementById('msgOut').value=msg;
-    document.getElementById('sent').hidden=false;
+    document.getElementById('sent').hidden=false;form.querySelector('.after').hidden=true;
     location.href=href;
   });
 })();
@@ -527,8 +544,16 @@ document.documentElement.classList.add('js');
   new IntersectionObserver(function(es){pastHero=!es[0].isIntersecting;sync()},{threshold:.15}).observe(document.getElementById('hero'));
   new IntersectionObserver(function(es){formIn=es[0].isIntersecting;sync()},{rootMargin:'-15% 0px -15% 0px'}).observe(document.getElementById('quoteForm'));
   // step aside while a row arrow or the Facebook arrow is in the bottom strip where the circle sits
-  var strip=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)hits.add(e.target);else hits.delete(e.target)});sync()},{rootMargin:'-'+Math.max(0,innerHeight-110)+'px 0px 0px 0px'});
-  [].forEach.call(document.querySelectorAll(".row .arrow,.fb .arrow"),function(a){strip.observe(a)});
+  var strip=null,lastH=0,t;
+  function watch(){
+    if(innerHeight===lastH)return;lastH=innerHeight;
+    if(strip)strip.disconnect();hits.clear();
+    strip=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)hits.add(e.target);else hits.delete(e.target)});sync()},{rootMargin:'-'+Math.max(0,innerHeight-110)+'px 0px 0px 0px'});
+    [].forEach.call(document.querySelectorAll('.row .arrow,.fb .arrow'),function(a){strip.observe(a)});
+  }
+  watch();
+  // the strip is measured from the screen height, so re-measure after a rotate or resize
+  addEventListener('resize',function(){clearTimeout(t);t=setTimeout(watch,200)});
   sync();
 })();
 
