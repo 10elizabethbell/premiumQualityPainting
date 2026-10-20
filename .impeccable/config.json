@@ -20,6 +20,33 @@
         ],
         "createdAt": "2026-10-20T15:40:11.127Z",
         "reason": "False positive: detector sees only fixed small UI sizes (13-20px); headings use clamp() 30-80px"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#f6f3ea",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T15:50:41.984Z",
+        "reason": "Paint-swatch dots on the colour chips (white/green/navy from the client's caption); content, not UI palette"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#26413a",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T15:50:42.044Z",
+        "reason": "Paint-swatch dots on the colour chips (white/green/navy from the client's caption); content, not UI palette"
+      },
+      {
+        "rule": "design-system-color",
+        "value": "#1d2c52",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T15:50:42.106Z",
+        "reason": "Paint-swatch dots on the colour chips (white/green/navy from the client's caption); content, not UI palette"
       }
     ]
   }
