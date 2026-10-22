@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Premium Quality Painting · Cabinet painting in Monmouth County, NJ</title>
 <meta name="description" content="Cabinet painting in Monmouth County, NJ, and surrounding areas. Detailed preparation and a smooth, beautiful finish. Call or text (848) 667-3925.">
-<meta name="theme-color" content="#f4f6fb">
+<meta name="theme-color" content="#0f1d38">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Premium Quality Painting · Cabinets beautifully repainted in Monmouth County">
 <meta property="og:description" content="Your dream kitchen starts with your favorite color. Cabinet painting in Monmouth County, NJ. Call or text (848) 667-3925.">
@@ -87,18 +87,19 @@ section{padding:64px 0}
 .btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)}
 
 /* ---------- Header ---------- */
-.top{background:var(--paper);color:var(--ink);position:relative;z-index:2}
+/* transparent, laid over the hero photo so the photo fills the first screen */
+.top{position:absolute;top:0;left:0;right:0;z-index:2;color:#fff}
 .top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:76px;padding-top:max(8px,env(safe-area-inset-top));padding-bottom:8px}
 .brand{display:flex;align-items:center;min-height:48px;text-decoration:none}
 .brand img{width:148px;height:auto}
 .tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 2px;font:400 17px/1 var(--display);text-decoration:none;white-space:nowrap}
-.tel svg{width:18px;height:18px;flex:none;color:var(--gold-ink)}
+.tel svg{width:18px;height:18px;flex:none;color:var(--gold)}
 
 /* ---------- Hero: their own finished room, softened under navy ---------- */
-.hero{padding:0;position:relative;background:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
+.hero{padding:0;position:relative;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;background:var(--deep);color:var(--on-dark);overflow:hidden;isolation:isolate}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%;z-index:-2}
 .hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(15,29,56,.84) 0%,rgba(15,29,56,.72) 55%,rgba(15,29,56,.9) 100%)}
-.hero-copy{display:grid;gap:20px;justify-items:start;padding-top:52px;padding-bottom:64px}
+.hero-copy{display:grid;gap:20px;justify-items:start;width:100%;padding-top:calc(76px + env(safe-area-inset-top) + 24px);padding-bottom:48px}
 .hero h1{color:#fff;font-size:clamp(40px,11.4vw,80px);line-height:1.02;max-width:11ch}
 /* H1 bounce-in (after lpmr.co.uk): each letter slides in from 50px right with a slight overshoot, 20ms apart */
 .hero h1 .w{display:inline-block;white-space:nowrap}
@@ -218,7 +219,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
   .brand img{width:180px}
   .tel{font-size:20px}
   section{padding:96px 0}
-  .hero-copy{padding-top:104px;padding-bottom:120px}
+  .hero-copy{padding-top:calc(88px + 48px);padding-bottom:72px}
   .hero h1{max-width:14ch}
   .promise{max-width:40ch}
   .actions{grid-auto-flow:column;justify-content:start;width:auto}
@@ -243,7 +244,7 @@ footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--on-d
 }
 /* hover styles only where there is a real pointer, so taps don't leave them stuck on */
 @media (hover:hover){
-.tel:hover{color:var(--gold-ink)}
+.tel:hover{color:var(--gold)}
 .btn-primary:hover{background:var(--gold-2);border-color:var(--gold-2)}
 .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)}
 .row:hover .arrow,.fb:hover .arrow{background:var(--gold);color:var(--ink)}
@@ -269,7 +270,7 @@ footer a:hover{color:var(--gold)}
 THESIS: A Monmouth County cabinet painter whose proof is the transformation itself: honey-wood built-ins turned deep green with brass pulls. One claim (cabinets beautifully repainted), their own before/afters, their own "what color would you choose?" hook as the way to ask for a quote.
 OWN-WORLD: Their flyer's gold serif lettering and gold (#e4b95c) on navy instead of black (navy is the wall colour in their own job photos), off-white paper, a mid navy (#1c3157) band. The hero is their finished green room, softened under navy. Cal Sans display, system body at 16/1.7.
 STORY: The visitor sees who paints cabinets in Monmouth County, flips their before/afters wood-to-green, trusts the prep-first promise, then answers "What color would you choose?" and sends it as a text.
-FIRST VIEWPORT: Paper header with the navy-lettered wordmark left and the tap-to-call number top right. Hero over the green room: eyebrow "Cabinet painting", "Monmouth County cabinets, beautifully repainted.", their dream-kitchen line, two pill buttons (Text us for a quote, See our work).
+FIRST VIEWPORT: Full-screen hero photo with a transparent header over it, gold wordmark left and the tap-to-call number top right. Hero over the green room: eyebrow "Cabinet painting", "Monmouth County cabinets, beautifully repainted.", their dream-kitchen line, two pill buttons (Text us for a quote, See our work).
 FORM: calm-photo band system with a photo hero. No concept roll: the calm band style (pitch-site calm-photo-style.md) has been the house default since 2026-10-19, so only the palette, hero photo and copy were chosen. Runner-up worlds for an opt-in signature motion are in HANDOFF.md.
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -280,7 +281,7 @@ FORM: calm-photo band system with a photo hero. No concept roll: the calm band s
 </svg>
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="#" aria-label="Premium Quality Painting, back to top"><img src="img/logo-navy.webp" width="604" height="164" alt="Premium Quality Painting"></a>
+    <a class="brand" href="#" aria-label="Premium Quality Painting, back to top"><img src="img/logo-gold.webp" width="604" height="164" alt="Premium Quality Painting"></a>
     <a class="tel" href="tel:+18486673925"><svg aria-hidden="true"><use href="#i-phone"/></svg>(848) 667-3925</a>
   </div>
 </header>
